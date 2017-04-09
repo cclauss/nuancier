@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright © 2013  Red Hat, Inc.
+# Copyright © 2013-2017  Red Hat, Inc.
 #
 # This copyrighted material is made available to anyone wishing to use,
 # modify, copy, or redistribute it subject to the terms and conditions
@@ -941,6 +941,7 @@ class Nuanciertests(Modeltests):
                 'election_folder': 'pingou',
                 'election_year': '2014',
                 'submission_date_start': TODAY - timedelta(days=15),
+                'submission_date_end': TODAY - timedelta(days=13),
                 'election_date_start': TODAY - timedelta(days=10),
                 'election_date_end': TODAY - timedelta(days=8),
                 'election_badge_link': 'http://badges.fp.org',
@@ -969,6 +970,7 @@ class Nuanciertests(Modeltests):
                 'election_folder': 'pingou',
                 'election_year': '2013',
                 'submission_date_start': TODAY - timedelta(days=15),
+                'submission_date_end': TODAY - timedelta(days=13),
                 'election_date_start': TODAY - timedelta(days=10),
                 'election_date_end': TODAY - timedelta(days=8),
                 'election_badge_link': 'http://badges.fp.org',
@@ -991,6 +993,7 @@ class Nuanciertests(Modeltests):
                 'election_folder': 'F20',
                 'election_year': '2013',
                 'submission_date_start': TODAY - timedelta(days=15),
+                'submission_date_end': TODAY - timedelta(days=13),
                 'election_date_start': TODAY - timedelta(days=10),
                 'election_date_end': TODAY - timedelta(days=8),
                 'election_badge_link': 'http://badges.fp.org',
@@ -1069,6 +1072,7 @@ class Nuanciertests(Modeltests):
                 'election_folder': 'pingou',
                 'election_year': '2014',
                 'submission_date_start': TODAY - timedelta(days=15),
+                'submission_date_end': TODAY - timedelta(days=13),
                 'election_date_start': TODAY - timedelta(days=10),
                 'election_date_end': TODAY - timedelta(days=8),
                 'election_badge_link': 'http://badges.fp.org',
@@ -1090,6 +1094,7 @@ class Nuanciertests(Modeltests):
                 'election_folder': 'pingou',
                 'election_year': '2014',
                 'submission_date_start': TODAY - timedelta(days=15),
+                'submission_date_end': TODAY - timedelta(days=13),
                 'election_date_start': TODAY - timedelta(days=10),
                 'election_date_end': TODAY - timedelta(days=8),
                 'election_badge_link': 'http://badges.fp.org',
@@ -1124,6 +1129,7 @@ class Nuanciertests(Modeltests):
                 'election_folder': 'pingou2',
                 'election_year': '2014',
                 'submission_date_start': TODAY - timedelta(days=15),
+                'submission_date_end': TODAY - timedelta(days=13),
                 'election_date_start': TODAY - timedelta(days=10),
                 'election_date_end': TODAY - timedelta(days=8),
                 'election_badge_link': 'http://badges.fp.org',
@@ -1158,6 +1164,7 @@ class Nuanciertests(Modeltests):
                 'election_folder': 'pingou',
                 'election_year': '2013',
                 'submission_date_start': TODAY - timedelta(days=15),
+                'submission_date_end': TODAY - timedelta(days=13),
                 'election_date_start': TODAY - timedelta(days=10),
                 'election_date_end': TODAY - timedelta(days=8),
                 'election_badge_link': 'http://badges.fp.org',
@@ -1179,6 +1186,7 @@ class Nuanciertests(Modeltests):
                 'election_folder': 'F20',
                 'election_year': '2013',
                 'submission_date_start': TODAY - timedelta(days=15),
+                'submission_date_end': TODAY - timedelta(days=13),
                 'election_date_start': TODAY - timedelta(days=10),
                 'election_date_end': TODAY - timedelta(days=8),
                 'election_badge_link': 'http://badges.fp.org',

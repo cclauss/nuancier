@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright © 2013  Red Hat, Inc.
+# Copyright © 2013-2017  Red Hat, Inc.
 #
 # This copyrighted material is made available to anyone wishing to use,
 # modify, copy, or redistribute it subject to the terms and conditions
@@ -99,6 +99,7 @@ class NuancierModeltests(Modeltests):
                 'id': 1,
                 'name': u'Wallpaper F19',
                 'submission_date_start': TODAY - timedelta(days=15),
+                'submission_date_end': TODAY - timedelta(days=13),
                 'year': 2013
             }
         )
@@ -155,6 +156,7 @@ class NuancierModeltests(Modeltests):
             election_year='2013',
             election_n_choice=2,
             submission_date_start=today,
+            submission_date_end=today + timedelta(days=1),
             election_date_start=today + timedelta(days=2),
             election_date_end=today + timedelta(days=4),
         )
@@ -175,6 +177,7 @@ class NuancierModeltests(Modeltests):
             election_year='2013',
             election_n_choice=2,
             submission_date_start=today - timedelta(days=2),
+            submission_date_end=today - timedelta(days=1),
             election_date_start=today,
             election_date_end=today + timedelta(days=2),
         )
@@ -195,6 +198,7 @@ class NuancierModeltests(Modeltests):
             election_year='2013',
             election_n_choice=2,
             submission_date_start=today - timedelta(days=4),
+            submission_date_end=today - timedelta(days=3),
             election_date_start=today - timedelta(days=2),
             election_date_end=today,
         )
