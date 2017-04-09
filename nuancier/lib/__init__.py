@@ -149,7 +149,7 @@ def get_results(session, election_id):
 def add_election(session, election_name, election_folder, election_year,
                  election_date_start, election_date_end,
                  submission_date_start, submission_date_end,
-                 election_n_choice, user_n_candidates,
+                 election_n_choice, user_n_candidates, allows_updating=True,
                  election_badge_link=None, user=None):
     """ Add a new election to the database.
 
@@ -180,6 +180,7 @@ def add_election(session, election_name, election_folder, election_year,
         election_n_choice=election_n_choice,
         user_n_candidates=user_n_candidates,
         election_badge_link=election_badge_link,
+        allows_updating=allows_updating,
     )
     session.add(election)
     session.flush()
@@ -198,7 +199,7 @@ def add_election(session, election_name, election_folder, election_year,
 def edit_election(session, election, election_name, election_folder,
                   election_year, election_date_start, election_date_end,
                   submission_date_start, submission_date_end,
-                  election_n_choice, user_n_candidates,
+                  election_n_choice, user_n_candidates, allows_updating=True,
                   election_badge_link=None, user=None):
     """ Edit an election of the database.
 
@@ -259,6 +260,10 @@ def edit_election(session, election, election_name, election_folder,
     if election.user_n_candidates != user_n_candidates:
         election.user_n_candidates = user_n_candidates
         edited.append('Number of candidates per user')
+
+    if election.allows_updating != allows_updating:
+        election.allows_updating = allows_updating
+        edited.append('Election allows updating')
 
     if edited:
         session.add(election)
